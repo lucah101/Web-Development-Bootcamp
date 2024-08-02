@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    #container {
+      background-color: #000;
+      width: 800px;
+      height: 800px;
+      display: grid;
+      grid-template-rows: 1.6fr 0.6fr 0.6fr 0.1fr;
+      grid-template-columns: 1fr 0.6fr 0.6fr 0.2fr;
+      gap: 10px;
+    }
+
+    .box {
+      background-color: #F0F1EC;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+        
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .topRight {
+      grid-column: span 3;
+    }
+    
+    .middle2 {
+      grid-row: span 2;
+    }
+
+    .middle1{
+      grid-column: span 2;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 2 / -2 / 3 / -1 ;
+      height: 90%;
+    }
+
+    .rightcorner {
+      grid-row: span 2;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div id="container">
+    <div class="box red"></div>
+    <div class="box topRight"></div>
+    <div class="box middle2"></div>
+    <div class="box middle2 middle1"></div>
+    <div class="box blue"></div>
+    <div class="box rightcorner"></div>
+    <div class="box"></div>
+    <div class="box yellow"></div>
+    <div class="box black"></div>
+    
+  </div>
+</body>
+
+</html>
